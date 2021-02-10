@@ -1,0 +1,60 @@
+/* the asterisk CSS selector targets all elements on the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Arial Narrow and sans-serif are "backup fonts" in case Montserrat doesn't load properly */
+  font-family: Montserrat, 'Arial Narrow Bold', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 5vh;
+}
+
+.quote-poster {
+  position: relative;
+  min-height: 275px;
+  max-height: 94vh;
+  background-image: url('https://metro.co.uk/wp-content/uploads/2017/04/guardians-of-the-galaxy.jpg?quality=90&strip=all');
+  background-size: cover;
+  background-position: top;
+  overflow: scroll;
+}
+
+.quote-poster .quote-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 5.9vw;
+  letter-spacing: -.2vw;
+  color: black;
+  background: white;
+  mix-blend-mode: screen;
+  font-weight: 800;
+  width: 50%;
+  height: 100%;
+  min-height: 275px;
+  text-align: right;
+}
+
+.quote-poster .quote-text p {
+  word-break: break-word;
+  font-size: 7vw;
+  padding-right: 10px;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.attribution {
+  font-size: 2vw;
+  font-weight: 700;
+  right: 2vw;
+  bottom: 1vw;
+  color: white;
+  position: absolute;
+  width: 100%;
+  text-align: right;
+}
